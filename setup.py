@@ -33,7 +33,7 @@ while "__version__" in ln:
 exec("".join(lines),info)
 
 
-NAME = "django-supervisor"
+NAME = "djsupervisor"
 VERSION = info["__version__"]
 DESCRIPTION = "easy integration between djangocl and supervisord"
 LONG_DESC = info["__doc__"]
