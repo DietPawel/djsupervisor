@@ -1,3 +1,7 @@
+v0.5.0:
+  * Drop Python2 support
+  * Reformat with 2to3
+
 v0.4.0:
 
   * Fix compatibility with Django 1.10; thanks Gabriel Duman.

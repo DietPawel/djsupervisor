@@ -1,22 +1,8 @@
 
 import sys
 setup_kwds = {}
-if sys.version_info > (3,):
-    from setuptools import setup
-    setup_kwds["test_suite"] = "djsupervisor.tests"
-    setup_kwds["use_2to3"] = True
-else:
-    try:
-        from setuptools import setup
-    except ImportError:
-        from distutils.core import setup
-
-
-try:
-    next = next
-except NameError:
-    def next(i):
-        return i.next()
+from setuptools import setup
+setup_kwds["test_suite"] = "djsupervisor.tests"
 
 
 # Try to get "__version__" from the module itself.
@@ -49,7 +35,6 @@ PACKAGE_DATA = {
 }
 CLASSIFIERS = [
     "Programming Language :: Python",
-    "Programming Language :: Python :: 2",
     "License :: OSI Approved",
     "License :: OSI Approved :: MIT License",
     "Development Status :: 3 - Alpha",
